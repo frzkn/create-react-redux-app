@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement, signIn } from '../../actions'
 import './index.css'
 
-export default function Example() {
+export default () => {
   const counter = useSelector((state) => state.counterReducer)
   const authCheck = useSelector((state) => state.authReducer)
   const dispatch = useDispatch()
